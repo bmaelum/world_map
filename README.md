@@ -1,2 +1,1 @@
-# World map
-Map showing world population from 2018.
+# hydro_map
