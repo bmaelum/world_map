@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# # Interactive Map using Python
+# # Interactive World Map using Python
 # ## World population data
 
 # In[1]:
@@ -181,7 +181,7 @@ df_world.head()
 
 # ## Convert df to json
 
-# In[22]:
+# In[18]:
 
 
 def world_json_data():
@@ -197,13 +197,13 @@ def world_json_data():
 
 # ### Plotting Function
 
-# In[23]:
+# In[19]:
 
 
 format_df.loc[format_df['field'] == 'population', 'format'].iloc[0]
 
 
-# In[24]:
+# In[20]:
 
 
 # Create a plotting function
@@ -245,7 +245,7 @@ def make_plot(field_name):
 
 # ## Main code
 
-# In[25]:
+# In[21]:
 
 
 # Input geojson source that contains features for plotting for:
@@ -264,7 +264,7 @@ palette = palette[::-1]
 
 # ### The HoverTool
 
-# In[26]:
+# In[22]:
 
 
 # Add hover tool
@@ -275,13 +275,13 @@ hover = HoverTool(tooltips = [ ('Country','@country'),
 
 # ### Widgets and The Callback Function
 
-# In[27]:
+# In[23]:
 
 
 input_field
 
 
-# In[28]:
+# In[24]:
 
 
 # Call the plotting function
@@ -299,19 +299,19 @@ select = Select(title='Select Criteria:', value='Median Sales Price', options=['
 
 # Make a column layout of widgetbox(slider) and plot, and add it to the current document
 # Display the current document
-layout = column(p), widgetbox(select), widgetbox(slider))
+layout = column(p)#, widgetbox(select), widgetbox(slider))
 curdoc().add_root(layout)
 
 
 # ## Test notebook
 
-# In[29]:
+# In[25]:
 
 
 # Use the following code to test in a notebook, comment out for transfer to live site
 # Interactive features will not show in notebook
-#output_notebook()
-#show(p)
+output_notebook()
+show(p)
 
 
 # ## To run locally using Bokeh do following in terminal:
