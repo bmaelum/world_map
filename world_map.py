@@ -299,7 +299,7 @@ select = Select(title='Select Criteria:', value='Median Sales Price', options=['
 
 # Make a column layout of widgetbox(slider) and plot, and add it to the current document
 # Display the current document
-layout = column(p)#, widgetbox(select), widgetbox(slider))
+layout = column(p), widgetbox(select), widgetbox(slider))
 curdoc().add_root(layout)
 
 
