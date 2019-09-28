@@ -310,8 +310,8 @@ curdoc().add_root(layout)
 
 # Use the following code to test in a notebook, comment out for transfer to live site
 # Interactive features will not show in notebook
-output_notebook()
-show(p)
+#output_notebook()
+#show(p)
 
 
 # ## To run locally using Bokeh do following in terminal:
