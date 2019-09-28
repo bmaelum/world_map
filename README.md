@@ -1,2 +1,2 @@
-# Hydro Map
-Map showing info from Hydro annual report 2018.
+# World map
+Map showing world population from 2018.
